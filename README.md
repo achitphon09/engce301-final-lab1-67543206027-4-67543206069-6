@@ -4,6 +4,22 @@
 1. **นายอชิตพล โอชารส** รหัสนักศึกษา 67543206027-4
 2. **นายเมธิวัฒน์ ชมชื่น** รหัสนักศึกษา 67543206069-6
 
+--
+
+## Screenshots
+1. [01 - Docker Running](screenshots/01_docker_running.png)
+2. [02 - HTTPS in Browser](screenshots/02_https_browser.png)
+3. [03 - Login Success](screenshots/03_login_success.png)
+4. [04 - Login Fail](screenshots/04_login_fail.png)
+5. [05 - Create Task](screenshots/05_create_task.png)
+6. [06 - Get Tasks](screenshots/06_get_tasks.png)
+7. [07 - Update Task](screenshots/07_update_task.png)
+8. [08 - Delete Task](screenshots/08_delete_task.png)
+9. [09 - No JWT 401 Unauthorized](screenshots/09_no_jwt_401.png)
+10. [10 - API Logs](screenshots/10_logs_api.png)
+11. [11 - Rate Limiting](screenshots/11_rate_limit.png)
+12. [12 - Frontend Screenshot](screenshots/12_frontend_screenshot.png)
+
 ---
 
 ## 🏗️ System Architecture
