@@ -37,6 +37,13 @@
                        +-----------------+
 ```
 
+### 🔒 HTTPS Implementation
+ในระบบนี้ HTTPS ถูกจัดการที่ **Nginx Gateway**:
+1. **SSL Termination**: Nginx รับการเชื่อมต่อผ่านพอร์ต 443 โดยใช้ใบรับรอง SSL (Cert/Key) ที่อยู่ใน `nginx/certs/`
+2. **Encrypted Traffic**: ข้อมูลที่ส่งระหว่าง Client และ Nginx จะถูกเข้ารหัสทั้งหมด
+3. **Internal Proxy**: หลังจากถอดรหัสแล้ว Nginx จะส่งข้อมูลต่อไปยัง Microservices ต่างๆ ภายในวงเครือข่าย Docker (Internal Network) ทำให้ส่วนขยายของระบบยังคงปลอดภัย
+4. **HTTP Redirect**: มีการ Redirect อัตโนมัติจากพอร์ต 80 (HTTP) ไปยัง 443 (HTTPS) เพื่อบังคับความปลอดภัย
+
 ---
 
 ## 🚀 เทคโนโลยีที่ใช้ (Tech Stack)
@@ -66,6 +73,15 @@
 4. **เข้าใช้งาน**:
    - หน้าเว็บหลัก (HTTPS): `https://localhost`
    - ระบบจะ Redirect จาก `http://localhost` ไปยัง `https://localhost` โดยอัตโนมัติ
+
+---
+
+## 👥 Seed Users (ข้อมูลผู้ใช้งานเริ่มต้น)
+| Username | Email | Password | Role |
+| :--- | :--- | :--- | :--- |
+| `alice` | `alice@lab.local` | `alice123` | `member` |
+| `bob` | `bob@lab.local` | `bob456` | `member` |
+| `admin` | `admin@lab.local` | `adminpass` | `admin` |
 
 ---
 
