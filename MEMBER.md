@@ -2,7 +2,7 @@
 
 ## Group Information
 - Section: SEC_1
-- Group No: -
+- Group No: 1
 - Repository Name: engce301-final-lab1-67543206027-4-67543206069-6
 
 ## Members
